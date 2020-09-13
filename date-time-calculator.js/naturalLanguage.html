@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Drink Club Winery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="script.js"></script>
+</head>
+
+
+<body>
+  <div>
+    <center>
+      <form class="form-1">
+      <div class="form-group">
+        Date(MM/DD/YYYY):<input type="text" class="form-control" id="date1">
+      </div>
+      <label for="natural">Choose a Natural value</label>
+      <select id="natural" name="natural">
+        <optgroup label="Natural Language">
+          <option value="nd">Next Day</option>
+          <option value="tom">Tomorrow</option>
+          <option value="y">Yesterday</option>
+          <option value="nw">Next Week</option>
+          <option value="lw">Last Week</option>
+          <option value="ny">Next Year</option>
+          <option value="ly">Last Year</option>
+          <option value="nm">Next Month</option>
+          <option value="lm">Last Month</option>
+        </optgroup>
+      </select>
+       <input type="button" onclick="dateCalc('naturalLanguage')" value="Submit">
+      </form>
+    </center>
+  </div>
+  <div>
+    <h2>Output:</h2>
+    <h2 id=out></h2>
+  </div>
+</body>
